@@ -7,9 +7,6 @@ import { Flocada } from './app.component';
   ],
   entryComponents: [
     Flocada
-  ],
-  providers: [
-    { provide: ErrorHandler }
   ]
 })
 export class AppModule {}

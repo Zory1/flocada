@@ -22,7 +22,6 @@ angular2-compilers
 kadira:blaze-layout
 kadira:flow-router
 zimme:active-route
-less
 abpetkov:switchery
 rgnevashev:select2
 summernote:summernote
