@@ -3,3 +3,4 @@
   provide their own type declarations.
  */
 declare module '*';
+declare module "*.html" { const template: string; export default template; }

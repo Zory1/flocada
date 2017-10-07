@@ -1,11 +1,16 @@
-import { NgModule, ErrorHandler } from '@angular/core';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { Flocada } from './app.component';
+import { LoginComponent } from './login/login.component';
  
 @NgModule({
-  declarations: [
-    Flocada
+  imports: [
+    BrowserModule
   ],
-  entryComponents: [
+  declarations: [
+    Flocada,
+    LoginComponent
+  ], bootstrap: [
     Flocada
   ]
 })

@@ -1,38 +1,33 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
+    "baseUrl": "./typings",
     "declaration": false,
     "emitDecoratorMetadata": true,
-    "removeComments": false,
     "experimentalDecorators": true,
     "lib": [
       "dom",
       "es2015"
     ],
     "module": "commonjs",
-    "isolatedModules":false,
     "moduleResolution": "node",
     "sourceMap": true,
     "target": "es5",
     "skipLibCheck": true,
     "stripInternal": true,
     "noImplicitAny": false,
+    "typeRoots": [
+      "node_modules/@types/"
+    ],
     "types": [
       "meteor-typings",
-      "@types/underscore"
+      "@types/underscore",
+      "node"
     ]
   },
-  "include": [
-    "client/**/*.ts",
-    "server/**/*.ts",
-    "imports/**/*.ts"
-  ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    ".meteor"
   ],
-  "compileOnSave": false,
-  "atom": {
-    "rewriteTsconfig": false
-  }
+  "compileOnSave": false
 }
